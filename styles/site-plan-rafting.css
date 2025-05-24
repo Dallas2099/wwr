@@ -1,5 +1,187 @@
 /* Updated CSS for rafting site */
+/* Updated 2/23/2025, I am trying to preserve the process as we go through updating.*/
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
 
+/* Root Variables */
+:root {
+  --primary-color: #1B263B;
+  --secondary-color: #415A77;
+  --accent1-color: #E0E1DD;
+  --accent2-color: #778DA9;
+
+  --heading-font: 'Bebas Neue', sans-serif;
+  --paragraph-font: 'Open Sans', sans-serif;
+
+  --headline-color-on-white: #1B263B;
+  --headline-color-on-color: #E0E1DD;
+  --paragraph-color-on-white: #415A77;
+  --paragraph-color-on-color: #E0E1DD;
+  --paragraph-background-color: #1B263B;
+
+  --nav-link-color: #E0E1DD;
+  --nav-background-color: #415A77;
+  --nav-hover-link-color: #1B263B;
+  --nav-hover-background-color: #E0E1DD;
+}
+
+/* Base Styles */
+body {
+  font-family: var(--paragraph-font);
+  font-size: 22px;
+  background-color: #fcfbfb;
+  color: var(--paragraph-color-on-white);
+  margin: 0;
+  padding: 0;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6,
+.home-title,
+.msg h2 {
+  font-family: var(--heading-font);
+  color: var(--headline-color-on-white);
+  margin: 0;
+}
+
+.home-title {
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  color: var(--paragraph-color-on-white);
+}
+
+.msg {
+  background-color: #d9c2a3;
+  line-height: 1.5em;
+  padding: 35px;
+  text-align: center;
+}
+
+.msg p {
+  font-size: 0.8em;
+  padding-bottom: 15px;
+  color: #1B263B;
+}
+
+header {
+  background-color: rgba(20, 30, 13, 0.7);
+  padding: 1em;
+  text-align: center;
+  color: var(--headline-color-on-color);
+}
+
+#logo_link {
+  padding-top: 5px;
+}
+
+nav {
+  background-color: var(--nav-background-color);
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  padding: 10px;
+}
+
+nav a {
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 35px;
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
+
+.logo {
+  width: 80px;
+}
+
+.icon {
+  width: 80px;
+  padding-top: 10px;
+}
+
+#hero-img {
+  width: 100%;
+}
+
+#hero-msg h1,
+#hero-msg h4,
+.button-box,
+main section {
+  text-align: center;
+}
+
+.book,
+.join {
+  background-color: #556b2f;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
+}
+
+.book:hover,
+.join:hover {
+  background-color: #6b8e23;
+  color: white;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+  margin: 200px 0;
+}
+
+.card-img {
+  border: 10px solid var(--primary-color);
+}
+
+main section img {
+  box-sizing: border-box;
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 25px 50px;
+  margin-top: 200px;
+}
+
+footer p {
+  font-size: 1.2em;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ffd700;
+}
+
+footer .social img {
+  width: 40px;
+  margin: 0 10px;
+  padding-top: 15px;
+}
+
+
+<!--
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
 
 :root {
@@ -140,7 +322,7 @@ footer .social img {
 }
 
 
-<!-- 
+
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:wght@400;700&display=swap');
 
 :root {
